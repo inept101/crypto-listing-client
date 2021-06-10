@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500&display=swap');
+
+  .col-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 61px;
+    border-bottom: 1px solid #D9D5EC;;
+    width: 100%;
+  }
+  .col-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 24px;
+    min-width: 300px;
+    font-family: Inter;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+
+
+/* Fonts/Primary */
+
+color: #25213B;
+
+  }
+  .col-symbol {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    
+  }
+  .col-symbol span {
+    background: #E6E6F2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-family: Inter;
+    height: 19px;
+width: 58px;
+left: 0px;
+top: 9px;
+border-radius: 10px;
+text-transform: uppercase;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: 15px;
+letter-spacing: 0em;
+text-align: left;
+color: #4A4AFF;
+
+
+  }
+  .col-symbol .dot{
+    height: 6px;
+    width: 6px;
+    background-image: url("data:image/svg+xml, %3Csvg width='6' height='6' viewBox='0 0 6 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='3' cy='3' r='3' fill='%234A4AFF'/%3E%3C/svg%3E%0A");
+    margin-right: 4px;
+    display: inline-block;
+  }
+ 
+
+  .col-mktcap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 230px;
+    font-family: Inter;
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 15px;
+
+color: #6E6893;
+  }
+  .col-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 230px;
+    
+  }
+ 
+  .col-buttons button {
+    box-shadow:0px 5px 10px rgba(darken(dodgerblue, 40%));
+  transition: all .3s;
+  cursor: pointer;
+  }
+  .col-buttons button:hover {
+    box-shadow:0px 15px 25px -5px rgba(darken(dodgerblue, 40%));
+    transform: scale(1.03);
+  }
+  .col-buttons button:active {
+    box-shadow: 0px 4px 8px rgba(darken(dodgerblue, 30%));
+    transform: scale(.98);
+
+  }
+
+.btn-view{
+  height: 39px;
+  width: 99px;
+  border:none;
+  background: #6D5BD0;
+  border-radius: 6px;
+  font-family: Inter;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 19px;
+      text-transform: uppercase;
+      
+      /* Backgrounds/Primary */
+      
+      color: #FFFFFF;
+}
+
+
+.btn-a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow:0px 5px 10px rgba(darken(dodgerblue, 40%));
+  transition: all .3s;
+  cursor: pointer;
+
+}
+.col-buttons a:hover {
+  box-shadow:0px 15px 25px -5px rgba(darken(dodgerblue, 40%));
+  transform: scale(1.03);
+}
+.col-buttons a:active {
+  box-shadow: 0px 4px 8px rgba(darken(dodgerblue, 30%));
+  transform: scale(.98);
+
+}
+
+.btn-save{
+  height: 40px;
+width: 130px;
+background: #18A0FB;
+border-radius: 6px;
+border: none;
+font-family: Montserrat;
+font-size: 15px;
+font-style: normal;
+font-weight: 500;
+line-height: 18px;
+letter-spacing: -0.015em;
+text-align: center;
+color: #FFFFFF;
+
+
+}
+
+
+  .col-price {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    width: 180px;
+    margin-left: auto;
+  }
+  .price-text {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+    
+    text-align: right;
+    text-transform: uppercase;
+    
+    /* Fonts/Primary */
+    
+    color: #25213B;
+
+  }
+  .currency-text{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+    
+    text-align: right;
+    letter-spacing: 0.05em;
+    
+    /* Fonts/Primary Variant */
+    
+    color: #6E6893;
+
+  }
+
+  
