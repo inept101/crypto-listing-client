@@ -14,7 +14,7 @@ function SaveTable({
     <div className="table-container">
       <div className="table-header">
         <div className="table-row">
-          <div className="header-text save-header">COMPANY NAME</div>
+          <div className="header-text save-header">SAVED DATA TABLE</div>
         </div>
       </div>
       {savedCryptos
