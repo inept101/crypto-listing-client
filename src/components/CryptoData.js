@@ -1,8 +1,8 @@
 import React from "react";
 import "../assets/css/crypto.css";
-import {Link} from 'react-router-dom';
+import { Link } from "react-router-dom";
 
-function CryptoData({ crypto, saveRequest, saveData, delRequest}) {
+function CryptoData({ crypto, saveRequest, saveData, delRequest }) {
   function numFormatter(num) {
     if (num > 999 && num < 1000000) {
       return (num / 1000).toFixed(1) + "K";
@@ -14,7 +14,6 @@ function CryptoData({ crypto, saveRequest, saveData, delRequest}) {
       return num;
     }
   }
-
 
   return (
     <div className="col-row">
@@ -28,11 +27,30 @@ function CryptoData({ crypto, saveRequest, saveData, delRequest}) {
 
       <div className="col-mktcap">${numFormatter(crypto.market_cap)}</div>
       <div className="col-buttons">
-        {crypto.saved ? ( saveData ?
-        (<button className="btn-view" onClick={()=>{delRequest(crypto.id)}}>Delete</button>): ( <Link to="/view" className="btn-view btn-a">View</Link>)
-         
+        {crypto.saved ? (
+          saveData ? (
+            <button
+              className="btn-view"
+              onClick={() => {
+                delRequest(crypto.id);
+              }}
+            >
+              Delete
+            </button>
+          ) : (
+            <Link to="/view" className="btn-view btn-a">
+              View
+            </Link>
+          )
         ) : (
-          <button className="btn-save" onClick={()=>{saveRequest(crypto.id)}}>Save Data</button>
+          <button
+            className="btn-save"
+            onClick={() => {
+              saveRequest(crypto.id);
+            }}
+          >
+            Save Data
+          </button>
         )}
       </div>
 

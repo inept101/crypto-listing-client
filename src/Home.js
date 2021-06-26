@@ -45,13 +45,16 @@ function Home() {
   );
 
   function saveRequest(cId) {
-    axios.post('https://crypto-listing-ap.herokuapp.com/home', { id: cId }).then((res) => {
-      console.log(res);
-      const newCrypto = [...cryptos];
-      const crypto = newCrypto.find((crypto) => crypto.id === cId);
-      crypto.saved = !crypto.saved;
-      setCryptos(newCrypto);
-    });
+    axios
+      .post("https://crypto-listing-ap.herokuapp.com/home", { id: cId })
+      .then((res) => {
+        if (res.status === 200) {
+          const newCrypto = [...cryptos];
+          const crypto = newCrypto.find((crypto) => crypto.id === cId);
+          crypto.saved = !crypto.saved;
+          setCryptos(newCrypto);
+        }
+      });
   }
 
   return (

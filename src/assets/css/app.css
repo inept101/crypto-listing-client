@@ -28,19 +28,20 @@
   background: rgba(3, 28, 71, 0.8);
 }
 
-.navbar .logo {
+/* .navbar .logo {
   background: url("../QuikieAppsLogoResized-01.png.webp") no-repeat;
   background-size: contain;
   width: 120px;
   height: 54px;
   margin-left: 30px;
-}
+  
+} */
 .navbar ul {
   list-style-type: none;
   font-size: 1.2em;
   margin: 0;
   padding: 0;
-  padding-left: 10px;
+  padding-left: 50px;
 }
 .navbar li {
   display: inline;
@@ -61,17 +62,17 @@
   position: relative;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   height: 240px;
-  width: 77vw;
+  width: 71vw;
 }
 
 .h-card {
   position: relative;
   height: 195px;
-  width: 309px;
+  width: 20vw;
   padding: 20px;
-  margin: auto;
+  /* margin: auto; */
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -105,7 +106,7 @@
   align-items: center;
   justify-content: center;
   font-family: Roboto;
-  font-size: 36px;
+  font-size: 2.3rem;
   font-style: normal;
   font-weight: 400;
   line-height: 42px;
@@ -220,13 +221,13 @@ border-radius: 6px;
   align-items: center;
   justify-content: center;
   padding-right: 24px;
-  min-width: 300px;
+  width: 19.53vw;
 }
 .header-symbol {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 180px;
+  width: 11.7vw;
   text-transform: uppercase;
 }
 
@@ -234,13 +235,13 @@ border-radius: 6px;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 230px;
+  width: 15vw;
 }
 .header-price {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 180px;
+  width: 11.7vw;
   margin-left: auto;
 }
 .header-text {

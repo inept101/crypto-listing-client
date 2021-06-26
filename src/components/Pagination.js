@@ -1,15 +1,23 @@
 import React from "react";
-import {Link} from 'react-router-dom';
+import { Link } from "react-router-dom";
 
-function Pagination({ cryptos, currentPage, cryptoPerPage, changePage, saveData }) {
+function Pagination({
+  cryptos,
+  currentPage,
+  cryptoPerPage,
+  changePage,
+  saveData,
+}) {
   return (
     <div className="table-row table-footer">
-    {saveData ? (<div className="back-btn">
-      <Link to="/home" className="btn-view btn-a">Back</Link>
-      </div>):null}
-      
-      
-      
+      {saveData ? (
+        <div className="back-btn">
+          <Link to="/home" className="btn-view btn-a">
+            Back
+          </Link>
+        </div>
+      ) : null}
+
       <div className="crypto-shown">
         {currentPage * cryptoPerPage - cryptoPerPage + 1}-
         {Math.min(currentPage * cryptoPerPage, cryptos.length)} of{" "}
