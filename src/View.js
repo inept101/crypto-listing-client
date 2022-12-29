@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Cards from "./components/Cards";
 import SaveTable from "./components/SaveTable";
+import { ServerURI } from "./components/constant";
 
 function View() {
   const [savedCryptos, setSavedCryptos] = useState([]);

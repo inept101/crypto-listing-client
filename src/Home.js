@@ -3,6 +3,7 @@ import axios from "axios";
 import Cards from "./components/Cards";
 import Table from "./components/Table";
 import "./assets/css/app.css";
+import { ServerURI } from "./components/constant";
 
 function Home() {
   const [cryptos, setCryptos] = useState([]);
