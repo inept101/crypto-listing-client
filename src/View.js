@@ -10,7 +10,7 @@ function View() {
 
   useEffect(() => {
     axios
-      .get("https://crypto-listing-ap.herokuapp.com/view")
+      .get(`${ServerURI}/view`)
       .then((res) => {
         setSavedCryptos(res.data);
       })
@@ -35,15 +35,13 @@ function View() {
   }
 
   function delRequest(cId) {
-    axios
-      .post("https://crypto-listing-ap.herokuapp.com/view", { id: cId })
-      .then((res) => {
-        if (res.status === 200) {
-          let newCrypto = [...savedCryptos];
-          newCrypto = newCrypto.filter((crypto) => crypto.id !== cId);
-          setSavedCryptos(newCrypto);
-        }
-      });
+    axios.post(`${ServerURI}/view`, { id: cId }).then((res) => {
+      if (res.status === 200) {
+        let newCrypto = [...savedCryptos];
+        newCrypto = newCrypto.filter((crypto) => crypto.id !== cId);
+        setSavedCryptos(newCrypto);
+      }
+    });
   }
 
   return (
